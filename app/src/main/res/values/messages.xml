@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="network_error">Network Error</string>
+    <string name="network_error_desc">Please check your internet connection and try again.</string>
+    <string name="server_error">Server Error</string>
+    <string name="server_error_desc">Unable to connect to the server.</string>
+    <string name="internet_check">Checking Internet Connection. Please Wait...</string>
+</resources>

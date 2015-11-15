@@ -1,0 +1,71 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_indigo_50"
+    android:baselineAligned="false"
+    android:orientation="vertical"
+    android:theme="@style/AppTheme"
+    tools:context=".ImageOfTheDayActivity">
+
+    <include
+        android:id="@+id/tool_bar"
+        layout="@layout/tool_bar"></include>
+
+    <FrameLayout
+        android:id="@+id/activity_fragment_first"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tool_bar"
+        android:background="@color/color_indigo_50"></FrameLayout>
+
+    <!--<FrameLayout
+        android:id="@+id/activity_fragment_second"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tool_bar"
+        android:background="@color/color_indigo_50"></FrameLayout>-->
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="true"
+        android:layout_centerVertical="true" />
+
+
+    <RelativeLayout
+        android:id="@+id/error_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible">
+
+        <ImageView
+            android:id="@+id/image_error_msg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/title"
+            android:layout_centerVertical="true"
+            android:adjustViewBounds="true"></ImageView>
+
+        <TextView
+            android:id="@+id/error_msg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/image_error_msg"
+            android:fontFamily="sans-serif-medium"
+            android:gravity="center"
+            android:textSize="25dp" />
+
+        <TextView
+            android:id="@+id/error_msg_desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/error_msg"
+            android:fontFamily="sans-serif"
+            android:gravity="center" />
+
+    </RelativeLayout>
+</RelativeLayout>
